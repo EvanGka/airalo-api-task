@@ -15,7 +15,6 @@ Ensure the list contains 6 eSIMs, and that all of them have the "merhaba-7days-1
 To validate this we could:store: the https://sandbox-partners-api.airalo.com/v2/orders/174808?include=sims
 1. store the order id
 2. call the https://sandbox-partners-api.airalo.com/v2/orders/order_id?include=sims
-
  */
 
 public class GetSimsListTest extends BaseTest {

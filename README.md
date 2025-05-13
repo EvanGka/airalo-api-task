@@ -6,5 +6,13 @@ This is Java + RestAssured + TestNG framework that validates the following Airal
 
 
 How to run the tests:
-- Right click on the `apitests` package
-- Select `Run tests in apitests`
+1. Clone the repo
+2. Right click on the `apitests` package 
+3. Select `Run tests in apitests`
+
+
+Technical details:
+- I created a separate class, `TokenAuth` to create the Bearer token
+- I have added an assertion to the TokenAuth class that helps to ensure a valid Bearer token is created before any other endpoint is called
+- I created the `BaseTest` where I pass the base url of Airalo's endpoint
+- I'm using `TestNG` for the assertions and the `BeforeClass` annotation
